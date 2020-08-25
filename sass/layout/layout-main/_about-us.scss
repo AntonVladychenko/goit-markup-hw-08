@@ -1,0 +1,105 @@
+.aboutus-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-dark-color;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.aboutus-list {
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.aboutus-item {
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.aboutus-item:nth-child(1)::before {
+  background-image: url(../img/o-nas/antenna.svg);
+}
+.aboutus-item:nth-child(2)::before {
+  background-image: url(../img/o-nas/clock.svg);
+}
+.aboutus-item:nth-child(3)::before {
+  background-image: url(../img/o-nas/diagram.svg);
+}
+.aboutus-item:nth-child(4)::before {
+  background-image: url(../img/o-nas/kosmonavt.svg);
+}
+
+.aboutus-picture {
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
+}
+
+.aboutus-text {
+  line-height: 1.71;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}

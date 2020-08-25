@@ -1,0 +1,169 @@
+.footerpage {
+  background-color: #2f303a;
+  border: 1px solid $accent-color;
+  width: 100%;
+}
+.block-adress .link-logo {
+  color: $title-white-color;
+}
+
+.footerdiv {
+  display: flex;
+  align-items: baseline;
+}
+.join-div {
+  display: inline-block;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 94px;
+}
+
+.join-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-list-item {
+  padding-bottom: 24px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.sosial-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $accent-color;
+    cursor: pointer;
+  }
+}
+
+.sosial-link:hover .sochial-icons {
+  fill: $title-white-color;
+  cursor: pointer;
+}
+
+.sochial-icons {
+  display: inline-flex;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.sochial-icons:hover,
+.sochial-icons:focus {
+  fill: $title-white-color;
+}
+.join-list-item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.join-text {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-left: 12px;
+}
+.block-adress {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: 69px;
+}
+
+.adress {
+  margin-top: 20px;
+}
+
+.adress-list-item > .contacts-link {
+  padding: 0px;
+}
+
+.adress-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adress-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $title-white-color;
+  font-style: normal;
+}
+
+/* стилизация двух тегов b(присоединяйся и подписаться на пассылку) */
+.action {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-white-color;
+}
+.subscribeletters {
+  display: block;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.subscribe-div {
+  display: flex;
+}
+
+.subscribe-input {
+  padding-left: 16px;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 398px;
+  height: 50px;
+  color: $title-white-color;
+  background-color: #2f303a;
+}
+
+.subscribe-buton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  padding: 8px 29px 8px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border-radius: 4px;
+  border-color: transparent;
+
+  color: $title-white-color;
+  background-color: $button-hover-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $button-hover-color;
+  }
+}
+
+.subscribe-image::after {
+  display: inline-flex;
+  background-image: url(../img/svg/icon-send.svg);
+  content: "";
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-position: center;
+  margin-left: 10px;
+}

@@ -1,0 +1,42 @@
+.section-whywedoing {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.whywedoing-image-div {
+  position: relative;
+}
+.whywedoing-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.whywedoing-text {
+  position: absolute;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  @include font(14px, 700, 1.14);
+  text-transform: uppercase;
+  color: $title-dark-color;
+  bottom: 0px;
+  width: 100%;
+  color: #ffffff;
+}
+.whywedoing-title {
+  margin-bottom: 50px;
+}
+.whywedoing-list {
+  display: flex;
+}
+.whywedoing-item {
+  width: calc((100% - 60px) / 3);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
