@@ -430,6 +430,12 @@ span {
   color: #2196f3;
 }
 
+@media screen and (min-width: 480px) {
+  .link-logo {
+    padding: 16px 0 16px 15px;
+  }
+}
+
 .caption {
   font-weight: 700;
   text-align: center;
@@ -690,35 +696,43 @@ span {
   height: 15px;
 }
 
-.menu-btn {
-  display: inline-flex;
-  border: none;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-}
-
-.menu-btn .icon-cross {
-  display: none;
-}
-
-.menu-btn.is-open .icon-cross {
-  display: block;
-}
-
-.menu-btn.is-open .icon-menu {
-  display: none;
-}
-
-.menu-container {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  right: 0;
-  background-color: #ec9044;
-  padding-top: 120px;
-  padding-bottom: 60px;
-  text-align: center;
+@media screen and (max-width: 767px) {
+  .menu-btn {
+    display: inline-flex;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    padding: 16px 23px 16px 0;
+  }
+  .menu-btn .icon-cross {
+    display: none;
+  }
+  .menu-btn.is-open .icon-cross {
+    display: block;
+  }
+  .menu-btn.is-open .icon-menu {
+    display: none;
+  }
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right: 0;
+    border-top: 1px solid #ececec;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 500px;
+    letter-spacing: 0.02em;
+    background-color: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
 }
 
 /* стилизация студия-портфолио-контакты */
@@ -779,6 +793,18 @@ span {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 767px) {
+  .current:after {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .navigation-list {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .navigation-list {
     display: flex;
@@ -814,6 +840,12 @@ span {
   font-style: normal;
 }
 
+@media screen and (min-width: 480px) {
+  .contacts-item {
+    margin-bottom: 16px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts-item {
     display: inline-flex;
@@ -844,7 +876,6 @@ span {
 @media screen and (min-width: 480px) {
   .contacts-list {
     display: block;
-    margin-bottom: 20px;
   }
 }
 

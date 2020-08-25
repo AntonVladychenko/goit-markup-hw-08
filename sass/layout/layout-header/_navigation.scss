@@ -2,34 +2,48 @@
 //   display: flex;
 // }
 // стилизация кнопки меню батон для 480
-.menu-btn {
-  display: inline-flex;
-  border: none;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-}
-.menu-btn .icon-cross {
-  display: none;
-  // opacity: 1;
-}
-.menu-btn.is-open .icon-cross {
-  display: block;
-  // opacity: 0;
-}
-.menu-btn.is-open .icon-menu {
-  display: none;
-  // opacity: 1;
-}
-.menu-container {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  right: 0;
-  background-color: rgb(236, 144, 68);
-  padding-top: 120px;
-  padding-bottom: 60px;
-  text-align: center;
+@media screen and( max-width:767px) {
+  .menu-btn {
+    display: inline-flex;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    padding: 16px 23px 16px 0;
+  }
+  .menu-btn .icon-cross {
+    display: none;
+
+    // opacity: 1;
+  }
+  .menu-btn.is-open .icon-cross {
+    display: block;
+    // opacity: 0;
+  }
+  .menu-btn.is-open .icon-menu {
+    display: none;
+    // opacity: 1;
+  }
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right: 0;
+    border-top: 1px solid #ececec;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 500px;
+    letter-spacing: 0.02em;
+    background-color: $title-white-color;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    &.is-open {
+      display: block;
+    }
+  }
 }
 /* стилизация студия-портфолио-контакты */
 
@@ -90,11 +104,15 @@
     height: 4px;
     background-color: $accent-color;
     border-radius: 2px;
+    @media screen and (max-width: 767px) {
+      display: inline;
+    }
   }
 }
 
 .navigation-list {
   @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
   }
@@ -129,6 +147,7 @@
   align-self: center;
   font-style: normal;
   @media screen and (min-width: 480px) {
+    margin-bottom: 16px;
   }
   @media screen and (min-width: 768px) {
   }
@@ -161,7 +180,6 @@
 .contacts-list {
   @media screen and (min-width: 480px) {
     display: block;
-    margin-bottom: 20px;
   }
   @media screen and (min-width: 768px) {
   }
