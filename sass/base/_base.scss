@@ -51,22 +51,3 @@ p {
     padding-bottom: 94px;
   }
 }
-
-@media screen and (max-width: 1199px) {
-  .grid-item {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .grid-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .grid-item {
-    margin-right: 30px;
-  }
-  .grid-item:last-child {
-    margin-right: 0;
-  }
-}

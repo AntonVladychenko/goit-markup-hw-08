@@ -46,8 +46,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 30px;
-    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -66,6 +64,14 @@
   }
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -73,14 +79,12 @@
     &:not(:last-child) {
       margin-right: 30px;
     }
-    // flex-basis: 100% / 4;
   }
 }
-@media screen and (max-width: 767px) {
-  .us-team-list-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
+// @media screen and (max-width: 767px) {
+//   .us-team-list-item:not(:last-child) {
+//     margin-bottom: 30px;
+//   }
 
 .social-list {
   display: flex;

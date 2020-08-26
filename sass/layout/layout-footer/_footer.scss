@@ -5,11 +5,16 @@
 }
 .block-adress .link-logo {
   color: $title-white-color;
+  @media screen and(min-width:480px) {
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .footerdiv {
   @media screen and(min-width:480px) {
     text-align: center;
+    margin: 0;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -17,10 +22,19 @@
   }
 }
 .join-div {
-  display: inline-block;
-  align-items: center;
-  justify-content: flex-start;
-  margin-right: 94px;
+  @media screen and(min-width:480px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 94px;
+  }
 }
 
 .join-list {
@@ -54,7 +68,17 @@
 .block-adress {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-right: 69px;
+
+  @media screen and(min-width:480px) {
+    // display: flex;
+    // flex-wrap: nowrap;
+    // justify-content: center;
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 69px;
+  }
 }
 
 .adress {
@@ -90,9 +114,17 @@
   margin-bottom: 20px;
 }
 .subscribe-div {
+  display: inline;
+  @media screen and (max-width: 480px) {
+    // margin-left: auto;
+    // margin-right: auto;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
   }
+}
+.subscribe-input {
+  display: inline-block;
 }
 
 .subscribe-input {
@@ -100,28 +132,43 @@
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  width: 398px;
+  // width: 398px;
+  width: 100%;
   height: 50px;
   color: $title-white-color;
   background-color: #2f303a;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 
 .subscribe-buton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 12px;
   padding: 8px 29px 8px 29px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   border-radius: 4px;
   border-color: transparent;
-
   color: $title-white-color;
   background-color: $button-hover-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+  }
   &:hover,
   &:focus {
     cursor: pointer;
