@@ -387,13 +387,44 @@ p {
 
 /*общие падинги для всех секций  */
 .pading-general {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  border: 0;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .pading-general {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .grid-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid-item {
+    margin-right: 30px;
+  }
+  .grid-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .conteiner {
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -430,9 +461,11 @@ span {
   color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .link-logo {
+    display: inline-block;
     padding: 16px 0 16px 15px;
+    margin-right: 200px;
   }
 }
 
@@ -464,16 +497,29 @@ span {
 }
 
 .backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 30;
-  background: rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    background: rgba(0, 0, 0, 0.2);
+  }
 }
 
 .backdrop.is-hidden {
@@ -492,6 +538,13 @@ span {
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .main-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .form-field {
@@ -753,6 +806,13 @@ span {
 }
 
 /* навигация в хедере*/
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .navigation {
     display: flex;
@@ -760,7 +820,7 @@ span {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .flex-conteiner {
     display: flex;
     justify-content: space-between;
@@ -1194,6 +1254,14 @@ span {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .us-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .us-team-list {
     display: flex;
@@ -1214,13 +1282,16 @@ span {
 
 @media screen and (min-width: 768px) {
   .us-team-list-item {
-    flex-basis: 50%;
+    width: calc((100% - 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .us-team-list-item {
-    flex-basis: 100% / 4;
+    width: calc((100% - 90px) / 4);
+  }
+  .us-team-list-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -1300,6 +1371,11 @@ span {
 @media screen and (min-width: 480px) {
   .clients-item {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-item {
     width: calc((100% - 30px) / 2);
   }
 }
@@ -1307,6 +1383,14 @@ span {
 @media screen and (min-width: 1200px) {
   .clients-item {
     width: calc((100% - 90px) / 4);
+  }
+  .clients-item:not(:last-child) {
+    margin-right: 30px;
+    flex-basis: 100% / 4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -1347,9 +1431,17 @@ span {
   color: #ffffff;
 }
 
-.footerdiv {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 480px) {
+  .footerdiv {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footerdiv {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .join-div {
@@ -1431,8 +1523,10 @@ span {
   margin-bottom: 20px;
 }
 
-.subscribe-div {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .subscribe-div {
+    display: flex;
+  }
 }
 
 .subscribe-input {

@@ -8,8 +8,13 @@
 }
 
 .footerdiv {
-  display: flex;
-  align-items: baseline;
+  @media screen and(min-width:480px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .join-div {
   display: inline-block;
@@ -85,7 +90,9 @@
   margin-bottom: 20px;
 }
 .subscribe-div {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscribe-input {

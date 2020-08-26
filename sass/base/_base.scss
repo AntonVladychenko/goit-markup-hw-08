@@ -41,6 +41,32 @@ p {
 }
 /*общие падинги для всех секций  */
 .pading-general {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  border: 0;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .grid-item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grid-item {
+    margin-right: 30px;
+  }
+  .grid-item:last-child {
+    margin-right: 0;
+  }
 }

@@ -22,27 +22,31 @@
 .clients-item {
   @media screen and (min-width: 480px) {
     margin-bottom: 30px;
-    width: calc((100% - 30px) / 2);
   }
+
+  // :nth-child(odd) {
+  //   margin-right: 30px;
+  // }
+  // :nth-last-child(-n+2){
+  //   margin-bottom: 30px;
+  // }
+
   @media screen and (min-width: 768px) {
-    // width: calc((100% - 60px) / 3);
+    width: calc((100% - 30px) / 2);
   }
 
   @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
-  }
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-  // flex-basis: 100% / 4;
-  // display: flex;
-  // justify-content: center;
-  // text-align: center;
-  // align-items: center;
+    &:not(:last-child) {
+      margin-right: 30px;
 
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+      flex-basis: 100% / 4;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  }
 }
 
 .clients-link {

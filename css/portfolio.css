@@ -387,13 +387,44 @@ p {
 
 /*общие падинги для всех секций  */
 .pading-general {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  border: 0;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .pading-general {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .grid-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid-item {
+    margin-right: 30px;
+  }
+  .grid-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .conteiner {
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -430,9 +461,11 @@ span {
   color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .link-logo {
+    display: inline-block;
     padding: 16px 0 16px 15px;
+    margin-right: 200px;
   }
 }
 
@@ -520,6 +553,13 @@ span {
 }
 
 /* навигация в хедере*/
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .navigation {
     display: flex;
@@ -527,7 +567,7 @@ span {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .flex-conteiner {
     display: flex;
     justify-content: space-between;
