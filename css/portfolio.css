@@ -442,8 +442,13 @@ span {
 
 @media screen and (max-width: 767px) {
   .link-logo {
-    display: inline-block;
+    display: block;
     padding: 16px 0 16px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-logo {
     margin-right: 200px;
   }
 }

@@ -14,15 +14,15 @@ span {
 }
 .link-logo {
   @media screen and (max-width: 767px) {
-    display: inline-block;
+    display: block;
     // display: flex;
     // justify-content: center;
 
     padding: 16px 0 16px 15px;
-    margin-right: 200px;
   }
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
+    margin-right: 200px;
   }
 }
