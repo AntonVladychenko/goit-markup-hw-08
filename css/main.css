@@ -790,6 +790,12 @@ span {
 }
 
 /* навигация в хедере*/
+@media screen and (max-width: 767px) {
+  .navigation {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
@@ -857,7 +863,7 @@ span {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .navigation-item {
     margin-bottom: 40px;
   }
@@ -884,8 +890,8 @@ span {
   font-style: normal;
 }
 
-@media screen and (min-width: 480px) {
-  .contacts-item {
+@media screen and (max-width: 767px) {
+  .contacts-item:not(:last-child) {
     margin-bottom: 16px;
   }
 }

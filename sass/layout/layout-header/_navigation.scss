@@ -64,7 +64,8 @@
 /* навигация в хедере*/
 
 .navigation {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -125,7 +126,7 @@
   }
 }
 .navigation-item {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 40px;
     &:last-child {
       margin-bottom: 0px;
@@ -148,8 +149,10 @@
 .contacts-item {
   align-self: center;
   font-style: normal;
-  @media screen and (min-width: 480px) {
-    margin-bottom: 16px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
   }
   @media screen and (min-width: 768px) {
   }
