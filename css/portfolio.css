@@ -888,19 +888,30 @@ span {
   display: inline-block;
 }
 
+@media screen and (min-width: 768px) {
+  .examples-image {
+    width: 100%;
+  }
+}
+
 /*  список  */
-.examples-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .examples-list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+  }
 }
 
 /* элемент списка */
 .examples-item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
   text-align: start;
   border: 1px solid #eeeeee;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -909,6 +920,21 @@ span {
 .examples-item:hover {
   cursor: pointer;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .examples-item {
+    display: flex;
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples-item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .examples-item:nth-last-child(-n + 3) {
