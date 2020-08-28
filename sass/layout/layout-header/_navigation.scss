@@ -12,6 +12,7 @@
     background-color: transparent;
     padding: 16px 23px 16px 0;
   }
+
   .menu-btn .icon-cross {
     display: none;
 
@@ -24,6 +25,10 @@
   .menu-btn.is-open .icon-menu {
     display: none;
     // opacity: 1;
+  }
+  .menu-btn:hover,
+  .menu-btn:focus {
+    fill: $accent-color;
   }
   .menu-container {
     display: none;
@@ -155,9 +160,9 @@
     height: 4px;
     background-color: $accent-color;
     border-radius: 2px;
-    @media screen and (max-width: 767px) {
-      display: block;
-    }
+    // @media screen and (max-width: 767px) {
+    //   display: block;
+    // }
   }
 }
 

@@ -749,6 +749,10 @@ span {
   .menu-btn.is-open .icon-menu {
     display: none;
   }
+  .menu-btn:hover,
+  .menu-btn:focus {
+    fill: #2196f3;
+  }
   .menu-container {
     display: none;
     position: absolute;
@@ -897,12 +901,6 @@ span {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
-}
-
-@media screen and (max-width: 767px) {
-  .current:after {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1398,16 +1396,16 @@ span {
   }
 }
 
-.social-list {
+.sochial-list {
   display: flex;
   justify-content: center;
 }
 
-.social-list-item {
+.sochial-list-item {
   padding-bottom: 24px;
 }
 
-.social-list-item:not(:last-child) {
+.sochial-list-item:not(:last-child) {
   margin-right: 10px;
 }
 
