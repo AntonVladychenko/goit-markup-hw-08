@@ -526,8 +526,12 @@ span {
 
 @media screen and (min-width: 480px) {
   .main-form {
-    padding-left: 15px;
-    padding-right: 15px;
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 35px;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -35%);
   }
 }
 
@@ -788,7 +792,6 @@ span {
     background-color: #ffffff;
     padding-top: 60px;
     padding-bottom: 60px;
-    text-align: center;
   }
 }
 
@@ -999,6 +1002,12 @@ span {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts-list {
     display: flex;
@@ -1085,10 +1094,11 @@ span {
   .title-heroe {
     font-size: 26px;
     line-height: 1.62;
+    max-width: 396;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .title-heroe {
     font-size: 26px;
     line-height: 1.62;
@@ -1099,6 +1109,7 @@ span {
   .title-heroe {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 726;
   }
 }
 

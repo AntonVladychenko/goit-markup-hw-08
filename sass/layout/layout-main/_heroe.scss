@@ -10,6 +10,12 @@
     url(../img/Header-foto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .section-heroe > .conteiner {
   padding-bottom: 200px;
@@ -30,14 +36,16 @@
   @media screen and (min-width: 480px) {
     font-size: 26px;
     line-height: 1.62;
+    max-width: 396;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.62;
   }
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 726;
   }
 }
 // .div-heore {

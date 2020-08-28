@@ -62,7 +62,6 @@
     background-color: $title-white-color;
     padding-top: 60px;
     padding-bottom: 60px;
-    text-align: center;
   }
 }
 
@@ -247,6 +246,7 @@
     display: block;
   }
   @media screen and (min-width: 768px) {
+    display: block;
   }
   @media screen and (min-width: 1200px) {
     display: flex;

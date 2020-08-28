@@ -37,8 +37,12 @@
   background-color: $title-white-color;
   cursor: pointer;
   @media screen and (min-width: 480px) {
-    padding-left: 15px;
-    padding-right: 15px;
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 35px;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -35%);
   }
   @media screen and (min-width: 768px) {
   }

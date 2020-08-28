@@ -535,7 +535,6 @@ span {
     background-color: #ffffff;
     padding-top: 60px;
     padding-bottom: 60px;
-    text-align: center;
   }
 }
 
@@ -741,6 +740,12 @@ span {
 }
 
 @media screen and (min-width: 480px) {
+  .contacts-list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .contacts-list {
     display: block;
   }
