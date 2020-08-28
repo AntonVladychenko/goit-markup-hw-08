@@ -447,12 +447,6 @@ span {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .link-logo {
-    margin-right: 200px;
-  }
-}
-
 .caption {
   font-weight: 700;
   text-align: center;
@@ -603,6 +597,7 @@ span {
     line-height: 1.14;
     display: flex;
     align-items: center;
+    margin-left: 80px;
   }
 }
 
