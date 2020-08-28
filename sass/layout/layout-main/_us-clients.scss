@@ -40,7 +40,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     width: calc((100% - 90px) / 3);
     justify-content: center;
     align-items: center;
@@ -55,8 +55,7 @@
     @media screen and (min-width: 1200px) {
       display: flex;
       justify-content: center;
-      text-align: center;
-      align-items: center;
+      align-items: baseline;
 
       &:not(:last-child) {
         margin-right: 30px;

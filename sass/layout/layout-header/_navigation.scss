@@ -2,6 +2,7 @@
 //   display: flex;
 // }
 // стилизация кнопки меню батон для 480
+
 @media screen and( max-width:767px) {
   .menu-btn {
     display: inline-flex;
@@ -45,6 +46,33 @@
     }
   }
 }
+@media screen and( min-width:768px) {
+  .menu-btn {
+    display: none;
+  }
+  .menu-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-top: 1px solid #ececec;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 500px;
+    letter-spacing: 0.02em;
+    background-color: $title-white-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 /* стилизация студия-портфолио-контакты */
 
 .navigation-link {
@@ -55,6 +83,15 @@
   letter-spacing: 0.02em;
   color: $title-dark-color;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.16;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
@@ -65,13 +102,21 @@
 
 .navigation {
   @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    font-size: 14px;
+    line-height: 1.14;
   }
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 1.14;
   }
   @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.14;
     display: flex;
     align-items: center;
   }
@@ -84,6 +129,9 @@
     position: relative;
   }
   @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -108,7 +156,7 @@
     background-color: $accent-color;
     border-radius: 2px;
     @media screen and (max-width: 767px) {
-      display: inline;
+      display: block;
     }
   }
 }
@@ -118,11 +166,18 @@
     margin-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: 85px;
-    align-items: center;
+    // display: flex;
+    // margin-left: 85px;
+    // align-items: center;
   }
 }
 .navigation-item {
@@ -133,6 +188,11 @@
     }
   }
   @media screen and (min-width: 768px) {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
@@ -196,15 +256,21 @@
 
 .contacts-link {
   display: block;
-
   font-style: normal;
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $title-grey-color;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    line-height: 1.17;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 767px) {
+    line-height: 1.17;
+    font-size: 18px;
+  }
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -219,4 +285,14 @@
 .clients-picture:focus {
   color: $accent-color;
   cursor: pointer;
+}
+.divcontacts {
+  @media screen and (min-width: 768px) {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
