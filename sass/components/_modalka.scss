@@ -1,10 +1,11 @@
 .backdrop {
-  overflow-y: scroll;
+  // overflow-y: scroll;
   @media screen and (min-width: 480px) {
     padding-left: 15px;
     padding-right: 15px;
   }
   @media screen and (min-width: 768px) {
+    z-index: 50;
   }
   @media screen and (min-width: 1200px) {
     position: fixed;
@@ -25,31 +26,34 @@
 }
 
 .main-form {
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
   background-color: $title-white-color;
   cursor: pointer;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
+    z-index: 50;
     display: inline-block;
-    padding-left: 35px;
-    padding-right: 35px;
-    top: 40%;
-    left: 45%;
-    transform: translate(-50%, -35%);
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    // padding: 20px 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
   }
 }
-
+.form-clasd {
+  @media screen and (max-width: 767px) {
+    // display: block;
+    // padding-right: 15px;
+    // padding-left: 15px;
+  }
+}
 .form-field {
   position: relative;
   display: block;

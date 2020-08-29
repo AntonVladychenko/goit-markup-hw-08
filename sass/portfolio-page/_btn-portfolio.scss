@@ -2,17 +2,34 @@
   border-bottom: 1px solid #ececec;
 }
 /* стилизация переключатеелей */
-.cont-portfolio {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+
 .portfolio-section {
+  border-top: 1px solid #ececec;
   padding-top: 99px;
   padding-bottom: 99px;
 }
 .portfolio-list {
-  display: inline-flex;
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+.item-portfolio {
+  padding: 6px 14px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
 }
 .item-portfolio:not(:last-child) {
   margin-right: 8px;

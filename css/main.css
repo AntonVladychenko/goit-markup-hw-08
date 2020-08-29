@@ -401,7 +401,6 @@ p {
 }
 
 .conteiner {
-  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -474,14 +473,16 @@ span {
   }
 }
 
-.backdrop {
-  overflow-y: scroll;
-}
-
 @media screen and (min-width: 480px) {
   .backdrop {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    z-index: 50;
   }
 }
 
@@ -506,26 +507,22 @@ span {
 }
 
 .main-form {
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: #ffffff;
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .main-form {
+    z-index: 50;
     display: inline-block;
-    padding-left: 35px;
-    padding-right: 35px;
-    top: 40%;
-    left: 45%;
-    transform: translate(-50%, -35%);
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -768,6 +765,7 @@ span {
     padding-top: 120px;
     padding-bottom: 60px;
     text-align: center;
+    z-index: 50;
   }
   .menu-container.is-open {
     display: block;
@@ -803,7 +801,7 @@ span {
 
 /* стилизация студия-портфолио-контакты */
 .navigation-link {
-  display: block;
+  display: inline-block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -901,6 +899,12 @@ span {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .current:after {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1056,6 +1060,10 @@ span {
     align-items: center;
     justify-content: right;
   }
+}
+
+.flex-portfolio {
+  padding-top: 40px;
 }
 
 .section-heroe {
