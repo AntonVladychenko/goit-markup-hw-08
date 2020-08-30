@@ -974,18 +974,6 @@ span {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .examples-item {
-    width: calc((100% - 30px) / 2);
-  }
-  .examples-item:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
-  .examples-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .examples-item {
     width: calc((100% - 60px) / 3);
@@ -1000,6 +988,18 @@ span {
 
 .examples-item:nth-child(3n) {
   margin-right: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .examples-item {
+    width: calc((100% - 30px) / 2);
+  }
+  .examples-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .examples-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .examples-item :hover .overlay-div {
