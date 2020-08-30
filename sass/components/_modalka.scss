@@ -1,8 +1,8 @@
 .backdrop {
-  // overflow-y: scroll;
-  @media screen and (min-width: 480px) {
-    padding-left: 15px;
-    padding-right: 15px;
+  overflow-y: scroll;
+  @media screen and (max-width: 767px) {
+    padding-left: 35px;
+    padding-right: 35px;
   }
   @media screen and (min-width: 768px) {
     z-index: 50;
@@ -30,21 +30,32 @@
 
   background-color: $title-white-color;
   cursor: pointer;
+  z-index: 50;
+  display: inline-block;
   @media screen and (max-width: 767px) {
-    z-index: 50;
-    display: inline-block;
     padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 40px;
-    // padding: 20px 15px;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -60%);
   }
   @media screen and (min-width: 1200px) {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .form-clasd {

@@ -15,16 +15,12 @@
 
   .menu-btn .icon-cross {
     display: none;
-
-    // opacity: 1;
   }
   .menu-btn.is-open .icon-cross {
     display: block;
-    // opacity: 0;
   }
   .menu-btn.is-open .icon-menu {
     display: none;
-    // opacity: 1;
   }
   .menu-btn:hover,
   .menu-btn:focus {

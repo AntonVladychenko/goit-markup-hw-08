@@ -473,10 +473,14 @@ span {
   }
 }
 
-@media screen and (min-width: 480px) {
+.backdrop {
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 767px) {
   .backdrop {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
@@ -510,17 +514,37 @@ span {
   position: absolute;
   background-color: #ffffff;
   cursor: pointer;
+  z-index: 50;
+  display: inline-block;
 }
 
 @media screen and (max-width: 767px) {
   .main-form {
-    z-index: 50;
-    display: inline-block;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-form {
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
-    top: 50%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-form {
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -1623,7 +1647,7 @@ span {
 
 .join-text {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 200px;
   padding-left: 12px;
 }
 
