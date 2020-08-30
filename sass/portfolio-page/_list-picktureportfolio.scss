@@ -39,8 +39,6 @@
 .examples-list {
   @media screen and (max-width: 767px) {
     display: block;
-
-    flex-wrap: wrap;
   }
   @media screen and (min-width: 768px) {
     display: block;
