@@ -836,8 +836,12 @@ span {
   }
 }
 
-.item-portfolio {
-  padding: 6px 14px;
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    margin-right: 8px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -845,19 +849,17 @@ span {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 6px 14px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .item-portfolio {
-    margin-right: 8px;
-    display: inline-flex;
-    flex-wrap: nowrap;
+    padding: 0;
   }
-}
-
-.item-portfolio:not(:last-child) {
-  margin-right: 8px;
+  .item-portfolio:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 /* стилизация кнопопок-переключателей портфолио */

@@ -17,23 +17,27 @@
     flex-wrap: wrap;
     margin: 0 auto;
   }
-}
-.item-portfolio {
-  padding: 6px 14px;
-  @media screen and (max-width: 767px) {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
   @media screen and (min-width: 768px) {
     margin-right: 8px;
     display: inline-flex;
     flex-wrap: nowrap;
   }
 }
-.item-portfolio:not(:last-child) {
-  margin-right: 8px;
+.item-portfolio {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 14px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
 }
+
 /* стилизация кнопопок-переключателей портфолио */
 .btn-portfolio {
   display: block;
