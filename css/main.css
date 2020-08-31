@@ -1489,7 +1489,7 @@ span {
 .sochial-icons {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: #fff;
 }
 
 .sosial-link:hover .sochial-icons {
@@ -1683,8 +1683,7 @@ span {
 }
 
 .sochial-icons {
-  display: inline-flex;
-  background-position: center;
+  color: #ffffff;
   width: 20px;
   height: 20px;
 }
@@ -1695,7 +1694,9 @@ span {
 }
 
 .join-list-item {
+  margin-top: 20px;
   margin-right: 10px;
+  border-radius: 50%;
 }
 
 .join-list-item:last-child {
