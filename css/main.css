@@ -1683,6 +1683,8 @@ span {
 }
 
 .sochial-icons {
+  display: inline-flex;
+  background-position: center;
   color: #ffffff;
   width: 20px;
   height: 20px;
@@ -1869,5 +1871,45 @@ span {
   background-size: cover;
   background-position: center;
   margin-left: 10px;
+}
+
+.sochial-list {
+  display: flex;
+  justify-content: center;
+}
+
+.sochial-list-item {
+  padding-bottom: 24px;
+}
+
+.sochial-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.sosial-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sosial-link:hover {
+  background-color: #2196f3;
+  cursor: pointer;
+}
+
+.sochial-icons {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.sosial-link:hover .sochial-icons {
+  fill: #ffffff;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
